@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CdbCalculator.Core", "CdbCalculator.Core\CdbCalculator.Core.csproj", "{AC4E5B2F-D79F-4E75-8A91-FE9CA5336610}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CdbCalculator.Application", "CdbCalculator.Application\CdbCalculator.Application.csproj", "{EB82683C-27AB-4016-A48D-00F652568D78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CdbCalculator.Api", "CdbCalculator.Api\CdbCalculator.Api.csproj", "{B5C5744D-ECE3-4F73-9149-A07F3B8FCD5B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CdbCalculator.Web", "CdbCalculator.Web\", "{EF132974-5CCE-40D2-9DB2-586B734DF350}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51655"
+		Debug.AspNetCompiler.PhysicalPath = "CdbCalculator.Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51655\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51655"
+		Release.AspNetCompiler.PhysicalPath = "CdbCalculator.Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51655\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51655"
+		SlnRelativePath = "CdbCalculator.Web\"
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CdbCalculator.Application.Tests", "CdbCalculator.Application.Tests\CdbCalculator.Application.Tests.csproj", "{739FCA4D-779A-4DFB-A8FA-1513D5EBCF90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CdbCalculator.Api.Tests", "CdbCalculator.Api.Tests\CdbCalculator.Api.Tests.csproj", "{975377CE-9265-4718-A338-C0D4A40848E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E1863E66-EF51-4430-B2C7-B9BCFB5E41E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B2156E61-E587-4D9C-B886-1A22BAA6869D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CdbCalculator.Core.Tests", "CdbCalculator.Core.Tests\CdbCalculator.Core.Tests.csproj", "{7610048F-F43E-45BB-AB39-313536E55F9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC4E5B2F-D79F-4E75-8A91-FE9CA5336610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4E5B2F-D79F-4E75-8A91-FE9CA5336610}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4E5B2F-D79F-4E75-8A91-FE9CA5336610}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4E5B2F-D79F-4E75-8A91-FE9CA5336610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB82683C-27AB-4016-A48D-00F652568D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB82683C-27AB-4016-A48D-00F652568D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB82683C-27AB-4016-A48D-00F652568D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB82683C-27AB-4016-A48D-00F652568D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5C5744D-ECE3-4F73-9149-A07F3B8FCD5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5C5744D-ECE3-4F73-9149-A07F3B8FCD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5C5744D-ECE3-4F73-9149-A07F3B8FCD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5C5744D-ECE3-4F73-9149-A07F3B8FCD5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF132974-5CCE-40D2-9DB2-586B734DF350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF132974-5CCE-40D2-9DB2-586B734DF350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF132974-5CCE-40D2-9DB2-586B734DF350}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF132974-5CCE-40D2-9DB2-586B734DF350}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{739FCA4D-779A-4DFB-A8FA-1513D5EBCF90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739FCA4D-779A-4DFB-A8FA-1513D5EBCF90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739FCA4D-779A-4DFB-A8FA-1513D5EBCF90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739FCA4D-779A-4DFB-A8FA-1513D5EBCF90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975377CE-9265-4718-A338-C0D4A40848E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975377CE-9265-4718-A338-C0D4A40848E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975377CE-9265-4718-A338-C0D4A40848E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975377CE-9265-4718-A338-C0D4A40848E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7610048F-F43E-45BB-AB39-313536E55F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7610048F-F43E-45BB-AB39-313536E55F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7610048F-F43E-45BB-AB39-313536E55F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7610048F-F43E-45BB-AB39-313536E55F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC4E5B2F-D79F-4E75-8A91-FE9CA5336610} = {E1863E66-EF51-4430-B2C7-B9BCFB5E41E0}
+		{EB82683C-27AB-4016-A48D-00F652568D78} = {E1863E66-EF51-4430-B2C7-B9BCFB5E41E0}
+		{B5C5744D-ECE3-4F73-9149-A07F3B8FCD5B} = {E1863E66-EF51-4430-B2C7-B9BCFB5E41E0}
+		{EF132974-5CCE-40D2-9DB2-586B734DF350} = {E1863E66-EF51-4430-B2C7-B9BCFB5E41E0}
+		{739FCA4D-779A-4DFB-A8FA-1513D5EBCF90} = {B2156E61-E587-4D9C-B886-1A22BAA6869D}
+		{975377CE-9265-4718-A338-C0D4A40848E2} = {B2156E61-E587-4D9C-B886-1A22BAA6869D}
+		{7610048F-F43E-45BB-AB39-313536E55F9C} = {B2156E61-E587-4D9C-B886-1A22BAA6869D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {20C5FD72-05AF-4BA0-AB76-35C28F8CCA90}
+	EndGlobalSection
+EndGlobal
