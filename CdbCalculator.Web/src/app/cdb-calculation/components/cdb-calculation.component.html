@@ -1,0 +1,32 @@
+<div class="container">
+  <h2>Cálculo CDB</h2>
+  <form (ngSubmit)="calculateCdb()">
+    <div>
+      <label for="initialValue">Valor a Investir:</label>
+      <div class="input-group">
+        <span class="currency-symbol">R$</span>
+        <input type="number" id="initialValue" [(ngModel)]="initialValue" name="initialValue" required min="0.01" step="0.01">
+      </div>
+    </div>
+    <div>
+      <label for="months">Meses:</label>
+      <input type="number" id="months" [(ngModel)]="months" name="months" required min="2">
+    </div>
+    <button type="submit">Calcular</button>
+  </form>
+  <div *ngIf="result" class="resultados">
+    <h3>Resultados:</h3>
+    <p><strong>Valor Bruto:</strong> {{ result.grossValue | currency:'BRL':'symbol':'1.2-2' }}</p>
+    <p><strong>Valor Líquido:</strong> {{ result.netValue | currency:'BRL':'symbol':'1.2-2' }}</p>
+
+    <h3>Detalhamento:</h3>
+    <ul>
+      <li *ngFor="let value of result.monthlyValues; let i = index">
+        Parcela {{ i + 1 }}: {{ value | currency:'BRL':'symbol':'1.2-2' }}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+</div>

@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes'; // Certifique-se de que o caminho está correto
 import { AppComponent } from './app.component';
-import { CdbCalculationComponent } from './cdb-calculation/cdb-calculation.component';
+import { CdbCalculationComponent } from './cdb-calculation/components/cdb-calculation.component';
 import { CommonModule } from '@angular/common';
 
 @NgModule({

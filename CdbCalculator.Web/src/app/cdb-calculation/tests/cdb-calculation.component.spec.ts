@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { CdbCalculationComponent } from './cdb-calculation.component';
+import { CdbCalculationComponent } from '../components/cdb-calculation.component';
 import { FormsModule } from '@angular/forms';
-import { CdbCalculationResult } from './cdb-calculation-result.model';
+import { CdbCalculationResult } from '../models/cdb-calculation-result.model';
 
 describe('CdbCalculationComponent', () => {
   let component: CdbCalculationComponent;

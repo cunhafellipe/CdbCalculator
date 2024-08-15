@@ -1,40 +1,41 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { CdbCalculationService } from '../services/cdb-calculation.service';
+import { CdbCalculationResult } from '../models/cdb-calculation-result.model';
 import { CommonModule } from '@angular/common';
-import { CdbCalculationResult } from './cdb-calculation-result.model';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-cdb-calculation',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './cdb-calculation.component.html'
+  templateUrl: './cdb-calculation.component.html',
+  styleUrls: ['./cdb-calculation.component.css']
 })
 export class CdbCalculationComponent implements OnInit {
   initialValue: number = 0;
   months: number = 2;
   result: CdbCalculationResult | undefined;
+  errorMessage: string | undefined;
 
-  constructor(private http: HttpClient) { }
+  constructor(private cdbCalculationService: CdbCalculationService) { }
 
   ngOnInit() {
     console.log('CdbCalculationComponent initialized');
   }
 
   calculateCdb() {
-    this.http.post<CdbCalculationResult>('http://localhost:5240/api/CdbCalculation', {
-      InitialValue: this.initialValue,
-      Months: this.months
-    })
+    this.errorMessage = undefined;
+    this.result = undefined;
+
+    this.cdbCalculationService.calculateCdb(this.initialValue, this.months)
       .subscribe({
         next: (response: CdbCalculationResult) => {
           this.result = response;
           console.log('Monthly Values:', response.monthlyValues);
         },
-        error: (error: any) => {
-          console.error('Error calculating CDB:', error);
+        error: (error: Error) => {
+          this.errorMessage = error.message;
         }
       });
   }
-
 }
